@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding:0;
+}
+nav{
+  height: 100%;
+}
+nav{
+  background-color: #21222A;
+  height: 90px;
+  color: aqua;
+  display: flex;
+  padding-left: 25px;
+}
+nav > h1{
+  margin-left: 7px;
+  font-size: 1.4rem; /*pixels divided by 16 = rem*/
+  margin-top: 31px;
+}
+main{
+  background-color: #282D35;
+  height: 100vh;
+  color: white;
+  padding: 40px 30px;
+}
+main > ul{
+  margin: 20px 40px;
+}
+main > ul li::marker{
+  color: aqua;
+  font-size: 25px;
+}
+main > ul li{
+  line-height: 40px;
+  font-size: 1.1rem;
+}
+main > img{
+  position: absolute;
+  top: 190px;
+  right: -100px;
+}
