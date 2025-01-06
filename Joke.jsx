@@ -3,18 +3,13 @@ import emptyStar from '../assets/globe.png';
 import filledStar from '../assets/marker.png';
 export default function Joke() {
      function refreshClick(formData){
-        const email = formData.get("email")
-        const password = formData.get("password")
-        console.log(email)
-        console.log(password)
-        const textArea = formData.get("description")
-        const employmentStatus = formData.get("employmentStatus")
+        const data = Object.fromEntries(formData)
         const dietaryRestrictions = formData.getAll("dietaryRestrictions")
-
-        console.log(textArea)
-        console.log(employmentStatus)
-        console.log(dietaryRestrictions)
-
+        const allData ={
+            ...data, 
+                dietaryRestrictions
+        }
+        console.log(allData)
     }
     return (
         <section>
@@ -65,7 +60,7 @@ export default function Joke() {
                 </label>
                 </fieldset>
 
-                
+
             </form>
         </section>
     )
