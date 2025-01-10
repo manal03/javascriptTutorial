@@ -1,11 +1,11 @@
-import globeImg from '../assets/globe.png'
+import chefClaude from '../assets/chef-claude-icon.png'
 
 export default function Header(){
     return(
         <header>
         <nav>
-            <img src={globeImg} height="40px" alt="globe-image" />
-            <p>my travel journal.</p>
+            <img src={chefClaude} alt="chef-claude" />
+            <p>Chef Claude</p>
         </nav>
         </header>
         

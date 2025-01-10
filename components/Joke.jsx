@@ -1,8 +1,11 @@
-export default function Joke(props){
+import React from 'react'
+import avatar from '../assets/globe.png';
+import filledStar from '../assets/marker.png';
+export default function Joke(prop) {
     return(
-        <>
-    <h1>{props.setup}</h1>
-    <h1>{props.punchline}</h1>
-    </>
+        <header>
+            <img src={avatar}/>
+            <p>{prop.userName}</p>
+        </header>
     )
 }
